@@ -1,0 +1,90 @@
+/* Banner trang con */
+.page-banner {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://thiennhienmoitruong.vn/upload2024/images/abtv-phuong-3/76a.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 { font-size: 3rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+/* Bố cục chính */
+.detail-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Nội dung 2 phần, Sidebar 1 phần */
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* Nội dung bài viết */
+.post-content h2, .post-content h3 {
+    color: var(--green-leaf);
+    margin-bottom: 20px;
+}
+
+.post-content p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.post-content img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky; /* Giữ sidebar cố định khi cuộn */
+    top: 100px;
+    height: fit-content;
+}
+
+.info-card {
+    background: #fdf2f5; /* Màu hồng cực nhạt */
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid var(--pink-sen);
+}
+
+.info-card h4 {
+    color: var(--pink-sen);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.info-card ul { list-style: none; }
+.info-card ul li { margin-bottom: 12px; font-size: 0.95rem; }
+
+.cta-book {
+    display: block;
+    text-align: center;
+    background: var(--green-leaf);
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.cta-book:hover { background: var(--pink-sen); }
+footer {
+    background-color: #1b5e20; /* Màu nền xanh đậm */
+    padding: 20px 0;           /* Tạo khoảng cách trên dưới */
+    width: 100%;
+}
+
+footer p {
+    color: #ffffff;            /* Màu chữ trắng */
+    text-align: center;        /* Căn giữa nội dung văn bản */
+    font-size: 14px;
+    margin: 0;                 /* Loại bỏ khoảng cách mặc định của thẻ p */
+}
